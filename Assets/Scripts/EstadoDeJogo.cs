@@ -8,7 +8,7 @@ public class EstadoDeJogo : MonoBehaviour
         Monalisa = 0,
     }
 
-    public static int quadroAbertoID = 0;
     public static bool quadroAberto;
     public static bool podeProsseguirFase;
+    public static int faseAtual;
 }

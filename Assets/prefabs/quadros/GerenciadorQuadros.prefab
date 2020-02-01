@@ -172,6 +172,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pn quadro (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1810742010182683772, guid: 1bdc4dfabf6ef3e46b710a88b8087612,
+        type: 3}
+      propertyPath: quadroID
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bdc4dfabf6ef3e46b710a88b8087612, type: 3}
 --- !u!1 &5999843493903655367 stripped
@@ -302,6 +307,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: pn quadro (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1810742010182683772, guid: 1bdc4dfabf6ef3e46b710a88b8087612,
+        type: 3}
+      propertyPath: quadroID
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bdc4dfabf6ef3e46b710a88b8087612, type: 3}
