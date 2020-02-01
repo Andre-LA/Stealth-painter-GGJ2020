@@ -8,7 +8,7 @@ public class MatrizQuadro : MonoBehaviour
     public int quadroID; // talvez desnecessário
     public int[,] matriz;
     
-    int[][,] matrizes = new int [2][,];
+    int[][,] matrizes = new int [3][,];
     
     void Awake()
     {
@@ -16,9 +16,13 @@ public class MatrizQuadro : MonoBehaviour
                                    {3, 8, 5},
                                    {6, 7, 4}};
                                    
-        matrizes[1] = new int[3,3]{{1, 0, 5}, 
-                                   {8, 3, 2},
-                                   {6, 7, 4}};
+        matrizes[1] = new int[3,3]{{0, 1, 5}, 
+                                   {7, 3, 2},
+                                   {6, 8, 4}};
+                                   
+        matrizes[2] = new int[3,3]{{8, 7, 0}, 
+                                   {6, 2, 3},
+                                   {1, 4, 5}};
     
         matriz = matrizes[EstadoDeJogo.faseAtual];
     }
@@ -30,19 +34,33 @@ public class MatrizQuadro : MonoBehaviour
     
     bool VerificaResolvido()
     {
-        int anterior = -1;
-        for (int y = 0; y < 3; y++) {
-            for (int x = 0; x < 3; x++) {
-                if (y == 0 && x == 0 && matriz[y, x] != 0)
-                    return false;
-                
-                if (y != 0 && x != 0 && matriz[y, x] - anterior != 1)
-                    return false;
-                
-                anterior = matriz[y, x];
-            }
-        }
-        return true;
+        //int anterior = -1;
+        //for (int y = 0; y < 3; y++) {
+            //for (int x = 0; x < 3; x++) {
+                //if (y == 0 && x == 0 && matriz[y, x] != 0)
+                    //return false;
+                //
+                //if (y != 0 && x != 0 && matriz[y, x] - anterior != 1)
+                    //return false;
+                //
+                //anterior = matriz[y, x];
+            //}
+        //}
+        //return true;
+        
+        return (
+            matriz[0, 0] == 0 &&
+            matriz[0, 1] == 1 &&
+            matriz[0, 2] == 2 &&
+            
+            matriz[1, 0] == 3 &&
+            matriz[1, 1] == 4 &&
+            matriz[1, 2] == 5 &&
+            
+            matriz[2, 0] == 6 &&
+            matriz[2, 1] == 7 &&
+            matriz[2, 2] == 8
+        );
     }
     
     bool EValido(int x, int y)
@@ -52,13 +70,9 @@ public class MatrizQuadro : MonoBehaviour
     
     void FazerAlternacao(int x1, int y1, int x2, int y2)
     {
-        Debug.Log(string.Concat("antes:\n", MatrizToString()));
-        
         int _m = matriz[y2, x2];
         matriz[y2, x2] = matriz[y1, x1];
         matriz[y1, x1] = _m;
-        
-        Debug.Log(string.Concat("depois:\n", MatrizToString()));
     }
     
     public void Alternar(int x, int y)
