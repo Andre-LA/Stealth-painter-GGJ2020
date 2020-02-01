@@ -44,3 +44,12 @@ TagManager:
   - name: Background
     uniqueID: 3259328321
     locked: 0
+  - name: Cenario
+    uniqueID: 3055865195
+    locked: 0
+  - name: Player_objetos
+    uniqueID: 2410239507
+    locked: 0
+  - name: Fronteira
+    uniqueID: 3945614313
+    locked: 0
