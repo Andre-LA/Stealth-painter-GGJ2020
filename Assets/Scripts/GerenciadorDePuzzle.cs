@@ -16,6 +16,7 @@ public class GerenciadorDePuzzle : MonoBehaviour
             
             if (ativo)
                 quadroAtual = quadros[i].GetComponent<MatrizQuadro>();
+
             quadros[i].SetActive(ativo);
         }
     }
