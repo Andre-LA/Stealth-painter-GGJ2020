@@ -61,8 +61,11 @@ public class MatrizQuadro : MonoBehaviour
         Debug.Log(string.Concat("depois:\n", MatrizToString()));
     }
     
-    public int Alternar(int x, int y)
+    public void Alternar(int x, int y)
     {
+        if (resolvido)
+            return;
+            
         // direita  é x+1, y-0
         // cima     é x-0, y-1
         // esquerda é x-1, y-0
@@ -75,7 +78,7 @@ public class MatrizQuadro : MonoBehaviour
         if (EValido(xd, yd)) {
             if (matriz[yd, xd] == 0) {
                 FazerAlternacao(x, y, xd, yd);
-                return yd*3+xd;
+                return;
             }
         }
         
@@ -84,7 +87,7 @@ public class MatrizQuadro : MonoBehaviour
         if (EValido(xc, yc)) {
             if (matriz[yc, xc] == 0) {
                 FazerAlternacao(x, y, xc, yc);
-                return yc*3+xc;
+                return;
             }
         }
         
@@ -93,7 +96,7 @@ public class MatrizQuadro : MonoBehaviour
         if (EValido(xe, ye)) {
             if (matriz[ye, xe] == 0) {
                 FazerAlternacao(x, y, xe, ye);
-                return ye*3+xe;
+                return;
             }
         }
         
@@ -102,11 +105,9 @@ public class MatrizQuadro : MonoBehaviour
         if (EValido(xb, yb)) {
             if (matriz[yb, xb] == 0) {
                 FazerAlternacao(x, y, xb, yb);
-                return yb*3+xb;
+                return;
             }
         }
-        
-        return 0;
     }
     
     string MatrizToString()
