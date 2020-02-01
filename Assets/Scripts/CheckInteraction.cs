@@ -32,10 +32,8 @@ public class CheckInteraction : MonoBehaviour
     {
         if (collision.CompareTag("Interactive"))
         {
-            EstadoDeJogo.quadroAbertoID = collision.gameObject.GetComponent<Quadro>().id;
             alert.gameObject.SetActive(true);
             nearInteractive = true;
-            
         }
     }
 
