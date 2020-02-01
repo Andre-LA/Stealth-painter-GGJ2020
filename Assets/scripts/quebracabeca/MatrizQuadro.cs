@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MatrizQuadro : MonoBehaviour
 {
+    public bool resolvido;
     public int quadroID;
     public int[,] matriz;
     
@@ -14,6 +15,32 @@ public class MatrizQuadro : MonoBehaviour
     void Awake()
     {
         matriz = matrizQ1;
+    }
+    
+    void Update()
+    {
+        resolvido = VerificaResolvido();
+        
+        if (resolvido) {
+            // FAZER ALGUMA VITÓRIA DAHORA AQUI
+        }
+    }
+    
+    bool VerificaResolvido()
+    {
+        int anterior = -1;
+        for (int y = 0; y < 3; y++) {
+            for (int x = 0; x < 3; x++) {
+                if (y == 0 && x == 0 && matriz[y, x] != 0)
+                    return false;
+                
+                if (y != 0 && x != 0 && matriz[y, x] - anterior != 1)
+                    return false;
+                
+                anterior = matriz[y, x];
+            }
+        }
+        return true;
     }
     
     bool EValido(int x, int y)
@@ -93,4 +120,7 @@ public class MatrizQuadro : MonoBehaviour
     [ContextMenu("Testar Alterna 0x1")] public void TestarAlterna_01 () { Alternar(0, 1); }
     [ContextMenu("Testar Alterna 1x0")] public void TestarAlterna_10 () { Alternar(1, 0); }
     [ContextMenu("Testar Alterna 1x1")] public void TestarAlterna_11 () { Alternar(1, 1); }
+    
+    [ContextMenu("Pode prosseguir")] public void PodeProsseguir () { EstadoDeJogo.podeProsseguirFase = true; }
+    
 }
