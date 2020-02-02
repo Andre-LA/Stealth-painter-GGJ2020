@@ -75,14 +75,17 @@ public class CheckInteraction : MonoBehaviour
         {
             onMonalisaStart?.Invoke();
             monalisaLoaded = true;
+            paintingOnScreen = true;
         }
         else if (monalisaLoaded && nearPainting && Input.GetButtonDown("Jump") && !EstadoDeJogo.quadroAberto)
         {
             onMonalisaReEnter?.Invoke();
+            paintingOnScreen = true;
         }
         else if (monalisaLoaded && Input.GetButtonDown("Jump"))
         {
             onMonalisaExit?.Invoke();
+            paintingOnScreen = false;
         }
     }
 
