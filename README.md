@@ -8,3 +8,5 @@ Desenvolvedores:
 * Matheus: Desenho de nível e testes;
 * Paulo Sergio Soares Junior: programação;
 * Tauã Amaro Pereira: arte e design;
+
+Observação: A cena inicial do jogo é a cena "StartMenu".
