@@ -5,9 +5,9 @@ public class Patrol : MonoBehaviour
     public float speed;
     private float waitTime;
     public float startWaitTime;
-    public int startNode;
     private int numberOfNodes;
     private int currentNode;
+    public GameObject lanterna;
 
     private bool playerIsHiding = false;
     private Animator Anim;
@@ -18,7 +18,7 @@ public class Patrol : MonoBehaviour
     void Start()
     {
         waitTime = startWaitTime;
-        currentNode = startNode;
+        currentNode = moveSpots.Length-1;
         numberOfNodes = moveSpots.Length;
         CheckInteraction.onPlayerHiding += HiddenPlayer;
         Anim = GetComponent<Animator>();
@@ -28,8 +28,8 @@ public class Patrol : MonoBehaviour
     {
 
         transform.position = Vector2.MoveTowards(transform.position, moveSpots[NextNode(currentNode)].position, speed * Time.deltaTime);
-        axisX = moveSpots[NextNode(currentNode)].position.x;
-        axisY = moveSpots[NextNode(currentNode)].position.y;
+        axisX = Mathf.Clamp(transform.position.x - moveSpots[NextNode(currentNode)].position.x, -1f, 1f);
+        axisY = Mathf.Clamp(transform.position.y - moveSpots[NextNode(currentNode)].position.y, -1f, 1f);
         verificaDirecao();
         verificaAnimacao();
 
@@ -88,30 +88,34 @@ public class Patrol : MonoBehaviour
     {
         int antes = Anim.GetInteger("situacao");
 
-        if (axisY < -0.05f)
+        if (axisY < -0.20f)
         {
             Anim.SetInteger("situacao", 1);
+            lanterna.transform.rotation = Quaternion.Euler(Vector3.forward * 0);
             return;
         }
         else
         {
-            if (axisY > 0.05f)
+            if (axisY > 0.20f)
             {
                 Anim.SetInteger("situacao", 2);
+                lanterna.transform.rotation = Quaternion.Euler(Vector3.forward * 180);
                 return;
             }
         }
 
-        if (axisX > 0.05f || axisX < -0.05f)
+        if (axisX > 0.20f || axisX < -0.20f)
         {
+            if (axisX < -0.20f)
+            {
+                lanterna.transform.rotation = Quaternion.Euler(Vector3.forward * -90);
+            }
+            else
+            {
+                lanterna.transform.rotation = Quaternion.Euler(Vector3.forward * 90);
+            }
             Anim.SetInteger("situacao", 3);
             return;
-
         }
-
-        if (antes == 3)
-            Anim.SetInteger("situacao", 4);
-        else
-            Anim.SetInteger("situacao", 0);
     }
 }
