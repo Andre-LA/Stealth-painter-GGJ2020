@@ -46,7 +46,7 @@ public class CharacterMovement : MonoBehaviour
         }
         else
         {
-          player_footsteps.Play();
+          player_footsteps.Stop();
         }
     }
 
