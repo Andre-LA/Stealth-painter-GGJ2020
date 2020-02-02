@@ -16,6 +16,8 @@ public class EstadoDeJogo : MonoBehaviour
     public static int faseAtual;
     public static bool gameIsPaused;
     public static bool gameIsOver;
+    public static bool loreOnScreen;
+    public static bool levelIsStarting;
     private bool stopLoading;
 
     private void Start()
@@ -23,6 +25,8 @@ public class EstadoDeJogo : MonoBehaviour
         gameIsPaused = false;
         gameIsOver = false;
         stopLoading = false;
+        levelIsStarting = true;
+        loreOnScreen = true;
     }
     public void Update()
     {
@@ -43,6 +47,12 @@ public class EstadoDeJogo : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.T))
         {
             gameIsOver = true;
+        }
+        if (levelIsStarting)
+        {
+            levelIsStarting = false;
+            Time.timeScale = 0f;
+            SceneManager.LoadSceneAsync(8, LoadSceneMode.Additive);
         }
     }
 }
