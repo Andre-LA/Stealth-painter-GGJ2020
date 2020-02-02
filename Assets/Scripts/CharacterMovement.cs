@@ -13,6 +13,9 @@ public class CharacterMovement : MonoBehaviour
     public float axisX, axisY;
 
     public GameObject player;
+    public SpriteRenderer armario;
+    public GameObject armarioEntrar;
+    public GameObject armarioDentro;
     private Animator Anim;
     private SpriteRenderer playerSpriteRenderer;
 
@@ -114,13 +117,28 @@ public class CharacterMovement : MonoBehaviour
     {
         if (canPlayerMove)
         {
-            canPlayerMove = false;
-            playerSpriteRenderer.enabled = false;
+            if(EstadoDeJogo.interactive == "Armario")
+            {
+                canPlayerMove = false;
+                playerSpriteRenderer.enabled = false;
+                armario.enabled = false;
+                armarioEntrar.SetActive(true);
+                armarioEntrar.GetComponent<Animator>().Play(0);
+                armarioDentro.SetActive(true);
+            }
+            
         }
         else
         {
-            canPlayerMove = true;
-            playerSpriteRenderer.enabled = true;
+            if (EstadoDeJogo.interactive == "Armario")
+            {
+                canPlayerMove = true;
+                armario.enabled = true;
+                playerSpriteRenderer.enabled = true;
+                armarioEntrar.SetActive(false);
+                armarioDentro.SetActive(false);
+            }
+                
         }
     }
 }
