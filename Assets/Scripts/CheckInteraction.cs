@@ -22,7 +22,7 @@ public class CheckInteraction : MonoBehaviour
     {
         if (collision.CompareTag("Painting"))
         {
-            EstadoDeJogo.quadroAbertoID = collision.gameObject.GetComponent<Quadro>().id;
+            //EstadoDeJogo.quadroAbertoID = collision.gameObject.GetComponent<Quadro>().id;
             Alert();
             nearPainting = true;            
         }
