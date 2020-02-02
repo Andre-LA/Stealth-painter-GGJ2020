@@ -10,8 +10,7 @@ public class Porta : MonoBehaviour
     
     void Start()
     {
-        if (naoTemQuadro)
-            EstadoDeJogo.podeProsseguirFase = true;
+        EstadoDeJogo.podeProsseguirFase = false; //naoTemQuadro;
     }
         
     public void ProsseguirFase()

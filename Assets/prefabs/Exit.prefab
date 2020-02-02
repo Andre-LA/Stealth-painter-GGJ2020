@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7462333329426195189}
   - component: {fileID: 3880347372146798142}
+  - component: {fileID: 1871178123466721380}
   m_Layer: 0
   m_Name: luz verde
   m_TagString: Untagged
@@ -38,7 +39,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952350175352855096}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
@@ -49,7 +50,7 @@ MonoBehaviour:
   m_Color: {r: 0.6179246, g: 1, b: 0.6834641, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 000000003797871d416745c26bcd24b663bd68fd1356a98fe94b2deb
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -70,6 +71,18 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1871178123466721380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952350175352855096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7f9f5306e771664f8fadaf96a443d01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7988946357461100575
 GameObject:
   m_ObjectHideFlags: 0
@@ -80,9 +93,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7988946357461100573}
   - component: {fileID: 7988946357461100574}
+  - component: {fileID: 1447325650}
+  - component: {fileID: 1068980696604416963}
   m_Layer: 0
   m_Name: Exit
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,8 +152,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1239102101
-  m_SortingLayer: 3
+  m_SortingLayerID: -349352983
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 88aa21ec87dd20940a3042f580cf7c58, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -151,3 +166,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1447325650
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7988946357461100575}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.4}
+  serializedVersion: 2
+  m_Radius: 0.4
+--- !u!114 &1068980696604416963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7988946357461100575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f512aca78e8db9439bd3868f7cf1005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  proxCenaIdx: 2
+  naoTemQuadro: 0

@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/prefabs/Fase2_Parte2.unity
     guid: b2b6c7fd4e912cb43bcc3d3943684649
+  - enabled: 1
+    path: Assets/prefabs/Fase3_part1.unity
+    guid: c7b6c362c0f24e943ad4f4180ac0ad1a
+  - enabled: 1
+    path: Assets/prefabs/Fase3_part2.unity
+    guid: 6c7907ab99b488d4f8526f79726622fb
+  - enabled: 1
+    path: Assets/prefabs/Fase3_part3.unity
+    guid: 1363b03a0b7fe0549a692f07931a9fba
   m_configObjects: {}
