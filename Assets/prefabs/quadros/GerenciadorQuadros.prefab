@@ -409,6 +409,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6620564935578139595, guid: 2453b0c11339ff0468ddadf4f7a86d59,
         type: 3}
+    - target: {fileID: 9101473525661532720, guid: 1bdc4dfabf6ef3e46b710a88b8087612,
+        type: 3}
+      propertyPath: m_AspectRatio
+      value: 0.67
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bdc4dfabf6ef3e46b710a88b8087612, type: 3}
 --- !u!1 &654952534198347925 stripped
@@ -775,6 +780,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6540791588695383816, guid: a981748a674d34a40b7cf100d8a66602,
         type: 3}
+    - target: {fileID: 9101473525661532720, guid: 1bdc4dfabf6ef3e46b710a88b8087612,
+        type: 3}
+      propertyPath: m_AspectRatio
+      value: 1.24
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bdc4dfabf6ef3e46b710a88b8087612, type: 3}
 --- !u!1 &6123703633126504017 stripped
@@ -1141,6 +1151,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -6422575121423821414, guid: 5add9cab3dd5ca74b8713c3ed58bc829,
         type: 3}
+    - target: {fileID: 9101473525661532720, guid: 1bdc4dfabf6ef3e46b710a88b8087612,
+        type: 3}
+      propertyPath: m_AspectRatio
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bdc4dfabf6ef3e46b710a88b8087612, type: 3}
 --- !u!1 &6303487118040897642 stripped
@@ -1507,6 +1522,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -7372631276100336302, guid: eeccec47f0257474080462d46ab1e345,
         type: 3}
+    - target: {fileID: 9101473525661532720, guid: 1bdc4dfabf6ef3e46b710a88b8087612,
+        type: 3}
+      propertyPath: m_AspectRatio
+      value: 1.31
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bdc4dfabf6ef3e46b710a88b8087612, type: 3}
 --- !u!224 &5015932321158175072 stripped
@@ -1867,6 +1887,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2955675294773621344, guid: 2554294d9452c874f8d3ff99c5bdcdec,
         type: 3}
+    - target: {fileID: 9101473525661532720, guid: 1bdc4dfabf6ef3e46b710a88b8087612,
+        type: 3}
+      propertyPath: m_AspectRatio
+      value: 0.82
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bdc4dfabf6ef3e46b710a88b8087612, type: 3}
 --- !u!224 &7603824643061844044 stripped
