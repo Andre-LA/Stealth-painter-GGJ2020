@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: 55521b6692a18174d9ed1192445c2a2d
+guid: c48a3316bdc2fec4588e8ecb36d4ad3d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6540791588695383816
-    second: Noite_0
+      213: -5727962302304223873
+    second: Mona_0
   - first:
-      213: -8711756763536615554
-    second: Noite_1
+      213: -888096769452195972
+    second: Mona_1
   - first:
-      213: 4211241237262932138
-    second: Noite_2
+      213: 5763840500243533075
+    second: Mona_2
   - first:
-      213: -144299106130372533
-    second: Noite_3
+      213: -3315770988398837277
+    second: Mona_3
   - first:
-      213: -6676761045359122586
-    second: Noite_4
+      213: -4086779192450033163
+    second: Mona_4
   - first:
-      213: 2571390326201759786
-    second: Noite_5
+      213: 3370566933311621100
+    second: Mona_5
   - first:
-      213: -4286295054502534243
-    second: Noite_6
+      213: 3335485210964752250
+    second: Mona_6
   - first:
-      213: 569577521608158883
-    second: Noite_7
+      213: 8043707932285882293
+    second: Mona_7
   - first:
-      213: 3445434097884659908
-    second: Noite_8
+      213: 2852403894148191448
+    second: Mona_8
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -67,7 +67,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -185,13 +185,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Noite_0
+      name: Mona_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 330.6667
-        width: 206.33333
-        height: 165.33333
+        y: 400
+        width: 150
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 697b0c6f57c95824e896436ca44ea017
-      internalID: 6540791588695383816
+      spriteID: 788564a876251d84aad1257920bafa64
+      internalID: -5727962302304223873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Noite_1
+      name: Mona_1
       rect:
         serializedVersion: 2
-        x: 206
-        y: 330.6667
-        width: 206.33333
-        height: 165.33333
+        x: 150
+        y: 400
+        width: 150
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,20 +220,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b826e25879c16684093bee66570afca3
-      internalID: -8711756763536615554
+      spriteID: 258ac5b9a317c4d4d8180ca1eb71fe80
+      internalID: -888096769452195972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Noite_2
+      name: Mona_2
       rect:
         serializedVersion: 2
-        x: 412
-        y: 330.6667
-        width: 206.33333
-        height: 165.33333
+        x: 300
+        y: 400
+        width: 150
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,83 +241,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00b19ec7ef0b4bc458c069056a611380
-      internalID: 4211241237262932138
+      spriteID: 816a7e0fd0c409540aa21a3db9a82f3c
+      internalID: 5763840500243533075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Noite_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 165.66667
-        width: 206.33333
-        height: 165.33333
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca11ad89374ae2142bb64b291e74629e
-      internalID: -144299106130372533
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Noite_4
-      rect:
-        serializedVersion: 2
-        x: 206
-        y: 165.66667
-        width: 206.33333
-        height: 165.33333
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 092985683eac3584c892657aa2d1724a
-      internalID: -6676761045359122586
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Noite_5
-      rect:
-        serializedVersion: 2
-        x: 412
-        y: 165.66667
-        width: 206.33333
-        height: 165.33333
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c162e280d6e23ff459c2cc6f38cced91
-      internalID: 2571390326201759786
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Noite_6
+      name: Mona_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 0.66667175
-        width: 206.33333
-        height: 165.33333
+        y: 200
+        width: 150
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -325,20 +262,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f0dee09670bd394f9e4ed91a059904a
-      internalID: -4286295054502534243
+      spriteID: 64089289bf6252b41978566e195f8140
+      internalID: -3315770988398837277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Noite_7
+      name: Mona_4
       rect:
         serializedVersion: 2
-        x: 206
-        y: 0.66667175
-        width: 206.33333
-        height: 165.33333
+        x: 150
+        y: 200
+        width: 150
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -346,20 +283,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 659eaa6054eb1eb46bbefa0ef4b088e5
-      internalID: 569577521608158883
+      spriteID: 822e89ac31318bb43838e637710b7dd7
+      internalID: -4086779192450033163
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Noite_8
+      name: Mona_5
       rect:
         serializedVersion: 2
-        x: 412
-        y: 0.66667175
-        width: 206.33333
-        height: 165.33333
+        x: 300
+        y: 200
+        width: 150
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -367,8 +304,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97575791a0a89e14db561d72c597cdd7
-      internalID: 3445434097884659908
+      spriteID: 7ad314ab3f759634eae45515455393fc
+      internalID: 3370566933311621100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mona_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 150
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf875c5217c929d469d43d3b1af2d4e2
+      internalID: 3335485210964752250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mona_7
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 150
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44587ca2b62f8754fa2cb09e67d68c0a
+      internalID: 8043707932285882293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mona_8
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 150
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b24a54ac1072d746a584e97db2567ce
+      internalID: 2852403894148191448
       vertices: []
       indices: 
       edges: []
@@ -385,7 +385,7 @@ TextureImporter:
     secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 1
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

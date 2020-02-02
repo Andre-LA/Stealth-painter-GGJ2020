@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: a981748a674d34a40b7cf100d8a66602
+guid: 3544bab652173ac48aa7d5fd0d920f72
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6540791588695383816
-    second: Noite_0
+      213: 4998990965674732422
+    second: Van_0
   - first:
-      213: -8711756763536615554
-    second: Noite_1
+      213: -5648153225946533142
+    second: Van_1
   - first:
-      213: 4211241237262932138
-    second: Noite_2
+      213: 8427138703732001142
+    second: Van_2
   - first:
-      213: -144299106130372533
-    second: Noite_3
+      213: -6404252629814004124
+    second: Van_3
   - first:
-      213: -6676761045359122586
-    second: Noite_4
+      213: 642944563015265592
+    second: Van_4
   - first:
-      213: 2571390326201759786
-    second: Noite_5
+      213: 1796511214205668764
+    second: Van_5
   - first:
-      213: -4286295054502534243
-    second: Noite_6
+      213: 727115126180363887
+    second: Van_6
   - first:
-      213: 569577521608158883
-    second: Noite_7
+      213: 5428965208977916718
+    second: Van_7
   - first:
-      213: 3445434097884659908
-    second: Noite_8
+      213: -2532410249356116235
+    second: Van_8
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -185,13 +185,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Noite_0
+      name: Van_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 330.6667
-        width: 206.33333
-        height: 165.33333
+        y: 400
+        width: 150
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 697b0c6f57c95824e896436ca44ea017
-      internalID: 6540791588695383816
+      spriteID: 7fd64db17f39f544ab74d7a0cb396615
+      internalID: 4998990965674732422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Noite_1
+      name: Van_1
       rect:
         serializedVersion: 2
-        x: 206
-        y: 330.6667
-        width: 206.33333
-        height: 165.33333
+        x: 150
+        y: 400
+        width: 150
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,20 +220,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b826e25879c16684093bee66570afca3
-      internalID: -8711756763536615554
+      spriteID: 91baa748f4c770e49b0e0be4792c8e28
+      internalID: -5648153225946533142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Noite_2
+      name: Van_2
       rect:
         serializedVersion: 2
-        x: 412
-        y: 330.6667
-        width: 206.33333
-        height: 165.33333
+        x: 300
+        y: 400
+        width: 150
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,83 +241,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00b19ec7ef0b4bc458c069056a611380
-      internalID: 4211241237262932138
+      spriteID: d357703d27150b44bb159890ed62ff03
+      internalID: 8427138703732001142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Noite_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 165.66667
-        width: 206.33333
-        height: 165.33333
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca11ad89374ae2142bb64b291e74629e
-      internalID: -144299106130372533
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Noite_4
-      rect:
-        serializedVersion: 2
-        x: 206
-        y: 165.66667
-        width: 206.33333
-        height: 165.33333
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 092985683eac3584c892657aa2d1724a
-      internalID: -6676761045359122586
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Noite_5
-      rect:
-        serializedVersion: 2
-        x: 412
-        y: 165.66667
-        width: 206.33333
-        height: 165.33333
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c162e280d6e23ff459c2cc6f38cced91
-      internalID: 2571390326201759786
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Noite_6
+      name: Van_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 0.66667175
-        width: 206.33333
-        height: 165.33333
+        y: 200
+        width: 150
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -325,20 +262,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f0dee09670bd394f9e4ed91a059904a
-      internalID: -4286295054502534243
+      spriteID: 2c90e068d3fef714e8a93d8c68012301
+      internalID: -6404252629814004124
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Noite_7
+      name: Van_4
       rect:
         serializedVersion: 2
-        x: 206
-        y: 0.66667175
-        width: 206.33333
-        height: 165.33333
+        x: 150
+        y: 200
+        width: 150
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -346,20 +283,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 659eaa6054eb1eb46bbefa0ef4b088e5
-      internalID: 569577521608158883
+      spriteID: fbed73d670d7b2f40822f78610fdc0f6
+      internalID: 642944563015265592
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Noite_8
+      name: Van_5
       rect:
         serializedVersion: 2
-        x: 412
-        y: 0.66667175
-        width: 206.33333
-        height: 165.33333
+        x: 300
+        y: 200
+        width: 150
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -367,8 +304,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97575791a0a89e14db561d72c597cdd7
-      internalID: 3445434097884659908
+      spriteID: e02b0164348b3014d949267f48c52f37
+      internalID: 1796511214205668764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Van_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 150
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb0b8f5b8bf26bf43874397a7010f47e
+      internalID: 727115126180363887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Van_7
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 150
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13bd4ee90cbcc64fae693c2e7437560
+      internalID: 5428965208977916718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Van_8
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 150
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d66835d6c16258b45ba16934b6f326df
+      internalID: -2532410249356116235
       vertices: []
       indices: 
       edges: []
@@ -385,7 +385,7 @@ TextureImporter:
     secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 1
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

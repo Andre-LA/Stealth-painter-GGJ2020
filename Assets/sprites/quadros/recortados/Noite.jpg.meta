@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: 2554294d9452c874f8d3ff99c5bdcdec
+guid: 88bad46b053ad40428e14354b2f45f0b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2955675294773621344
-    second: Auto_0
+      213: 6540791588695383816
+    second: Noite_0
   - first:
-      213: 6902512175108192059
-    second: Auto_1
+      213: -8711756763536615554
+    second: Noite_1
   - first:
-      213: -6992738012968357441
-    second: Auto_2
+      213: 4211241237262932138
+    second: Noite_2
   - first:
-      213: 6388185641372100006
-    second: Auto_3
+      213: -144299106130372533
+    second: Noite_3
   - first:
-      213: -6866387269749140897
-    second: Auto_4
+      213: -6676761045359122586
+    second: Noite_4
   - first:
-      213: 8033251971892043152
-    second: Auto_5
+      213: 2571390326201759786
+    second: Noite_5
   - first:
-      213: -2016555064850085125
-    second: Auto_6
+      213: -4286295054502534243
+    second: Noite_6
   - first:
-      213: -5047391059955360760
-    second: Auto_7
+      213: 569577521608158883
+    second: Noite_7
   - first:
-      213: -7288107149692636045
-    second: Auto_8
+      213: 3445434097884659908
+    second: Noite_8
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -185,13 +185,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Auto_0
+      name: Noite_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 406.6667
-        width: 167.33333
-        height: 203.33333
+        y: 300
+        width: 200
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d854c0d186ed4c4da8016d662ba2589
-      internalID: 2955675294773621344
+      spriteID: faa0bbaee9b2b1043bb973325177cbd1
+      internalID: 6540791588695383816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Auto_1
+      name: Noite_1
       rect:
         serializedVersion: 2
-        x: 167
-        y: 406.6667
-        width: 167.33333
-        height: 203.33333
+        x: 200
+        y: 300
+        width: 200
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,20 +220,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e249d22bf52b957468e84bc00bcc19b7
-      internalID: 6902512175108192059
+      spriteID: 89ba4f3ac9df3204fa46d1b921f28226
+      internalID: -8711756763536615554
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Auto_2
+      name: Noite_2
       rect:
         serializedVersion: 2
-        x: 334
-        y: 406.6667
-        width: 167.33333
-        height: 203.33333
+        x: 400
+        y: 300
+        width: 200
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,83 +241,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8450a46ea2abfe4f9193f76bf0e36c2
-      internalID: -6992738012968357441
+      spriteID: 1a4c41e1bab869a40903dd638afe7b6b
+      internalID: 4211241237262932138
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Auto_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 203.66667
-        width: 167.33333
-        height: 203.33333
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb69143a6c38ee547a3deaf292190eb6
-      internalID: 6388185641372100006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Auto_4
-      rect:
-        serializedVersion: 2
-        x: 167
-        y: 203.66667
-        width: 167.33333
-        height: 203.33333
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5832e700458521444a175cb70f255932
-      internalID: -6866387269749140897
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Auto_5
-      rect:
-        serializedVersion: 2
-        x: 334
-        y: 203.66667
-        width: 167.33333
-        height: 203.33333
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74497020fe287a346b1d8721a30f8eac
-      internalID: 8033251971892043152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Auto_6
+      name: Noite_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 0.66667175
-        width: 167.33333
-        height: 203.33333
+        y: 150
+        width: 200
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -325,20 +262,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79eb91edd035e824d88d8050a24cc730
-      internalID: -2016555064850085125
+      spriteID: 0a8774e0b47739c4bb5465ef7f6910c4
+      internalID: -144299106130372533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Auto_7
+      name: Noite_4
       rect:
         serializedVersion: 2
-        x: 167
-        y: 0.66667175
-        width: 167.33333
-        height: 203.33333
+        x: 200
+        y: 150
+        width: 200
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -346,20 +283,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6a29c43c3fd1e84988abc4bba659915
-      internalID: -5047391059955360760
+      spriteID: 2c65e62447af9744d8f548051df13dcb
+      internalID: -6676761045359122586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Auto_8
+      name: Noite_5
       rect:
         serializedVersion: 2
-        x: 334
-        y: 0.66667175
-        width: 167.33333
-        height: 203.33333
+        x: 400
+        y: 150
+        width: 200
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -367,8 +304,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30f5e15afd0811d468d97f8225378971
-      internalID: -7288107149692636045
+      spriteID: cea1bbfcefc105e488d7bb4012793e16
+      internalID: 2571390326201759786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noite_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 200
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca3e59f7474bc8409efc84feeee5ba9
+      internalID: -4286295054502534243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noite_7
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 200
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f39705fbdfc2cf543a117cf20bcffca6
+      internalID: 569577521608158883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noite_8
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 200
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c5c47dc70d66b41a2b7e8a314aa088
+      internalID: 3445434097884659908
       vertices: []
       indices: 
       edges: []
@@ -385,7 +385,7 @@ TextureImporter:
     secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 1
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
