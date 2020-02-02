@@ -32,7 +32,14 @@ public class Buttons : MonoBehaviour
             SceneManager.UnloadSceneAsync(7);
         }
     }
+    
+    public void LoreContinue()
+    {
+        EstadoDeJogo.loreOnScreen = false;
+        EstadoDeJogo.gameIsPaused = false;
 
+        SceneManager.LoadScene(0);
+    }
 
     public void Restart()
     {
@@ -53,7 +60,7 @@ public class Buttons : MonoBehaviour
 
     public void NewGame()
     {
-
+        SceneManager.LoadScene(8);
     }
 
     public void Back()
