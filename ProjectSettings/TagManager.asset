@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Interactive
+  - Guard
+  - Painting
+  - Door
   layers:
   - Default
   - TransparentFX
@@ -41,6 +45,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+
+  - name: Characters
+    uniqueID: 495425335
   - name: Background
     uniqueID: 3259328321
     locked: 0

@@ -42,7 +42,6 @@ public class DesenhaQuebraCabeca : MonoBehaviour
     
     public void Deslizar(GameObject v)
     {
-        Debug.Log("Dezlizar:" + v.name);
         int i = int.Parse(v.name);
         
         for (int _y = 0; _y < 3; _y++)

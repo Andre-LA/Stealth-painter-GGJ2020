@@ -7,6 +7,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField]
     private float playerSpeed = 8f;
     private bool canPlayerMove = true;
+
     public float direcao = 0.5f;
     public float axisX, axisY;
 
@@ -88,5 +89,10 @@ public class CharacterMovement : MonoBehaviour
     private void StartPlayerMovement()
     {
         canPlayerMove = true;
+    }
+
+    private void UpdatePlayerAnim(float X, float Y)
+    {
+        
     }
 }
