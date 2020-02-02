@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+﻿using UnityEngine.SceneManagement;
 
 public class Patrol : MonoBehaviour
 {
@@ -26,7 +27,6 @@ public class Patrol : MonoBehaviour
 
     void FixedUpdate()
     {
-
         transform.position = Vector2.MoveTowards(transform.position, moveSpots[NextNode(currentNode)].position, speed * Time.deltaTime);
         axisX = Mathf.Clamp(transform.position.x - moveSpots[NextNode(currentNode)].position.x, -1f, 1f);
         axisY = Mathf.Clamp(transform.position.y - moveSpots[NextNode(currentNode)].position.y, -1f, 1f);
@@ -61,7 +61,7 @@ public class Patrol : MonoBehaviour
     {
         if (collision.CompareTag("Player") && !playerIsHiding)
         {
-            Debug.Log("Peguei Voce!");
+            SceneManager.LoadScene(11);
         }
     }
 

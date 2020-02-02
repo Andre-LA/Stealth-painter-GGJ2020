@@ -533,6 +533,16 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 3589329920305686172, guid: 27294c3ecd0c7ef4ba16a3c9efac3315,
+        type: 3}
+      propertyPath: quadros.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3589329920305686172, guid: 27294c3ecd0c7ef4ba16a3c9efac3315,
+        type: 3}
+      propertyPath: quadros.Array.data[2]
+      value: 
+      objectReference: {fileID: 1963226061}
     - target: {fileID: 4265789068984432660, guid: 27294c3ecd0c7ef4ba16a3c9efac3315,
         type: 3}
       propertyPath: m_Layer
@@ -818,6 +828,12 @@ PrefabInstance:
 --- !u!224 &1963226060 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1139891271043766159, guid: 27294c3ecd0c7ef4ba16a3c9efac3315,
+    type: 3}
+  m_PrefabInstance: {fileID: 1963226059}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1963226061 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7603824643061844043, guid: 27294c3ecd0c7ef4ba16a3c9efac3315,
     type: 3}
   m_PrefabInstance: {fileID: 1963226059}
   m_PrefabAsset: {fileID: 0}
