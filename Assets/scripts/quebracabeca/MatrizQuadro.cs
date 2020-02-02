@@ -12,9 +12,9 @@ public class MatrizQuadro : MonoBehaviour
     
     void Awake()
     {
-        matrizes[0] = new int[3,3]{{2, 0, 1}, 
-                                   {3, 8, 5},
-                                   {6, 7, 4}};
+        matrizes[0] = new int[3,3]{{2, 8, 1}, 
+                                   {3, 5, 0},
+                                   {7, 6, 4}};
                                    
         matrizes[1] = new int[3,3]{{0, 1, 5}, 
                                    {7, 3, 2},
