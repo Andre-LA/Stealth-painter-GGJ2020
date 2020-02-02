@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour
 {
+ 
     private void Update()
     {
         if (Input.GetButtonDown("Cancel") && EstadoDeJogo.gameIsPaused)
@@ -21,6 +22,14 @@ public class Buttons : MonoBehaviour
     {
         Time.timeScale = 1f;
         EstadoDeJogo.gameIsPaused = false; 
+        SceneManager.UnloadSceneAsync(7);
+    }
+
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(EstadoDeJogo.faseAtual);
+        Time.timeScale = 1f;
         SceneManager.UnloadSceneAsync(7);
     }
 }

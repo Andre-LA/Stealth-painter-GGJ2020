@@ -15,10 +15,14 @@ public class EstadoDeJogo : MonoBehaviour
     public static bool podeProsseguirFase;
     public static int faseAtual;
     public static bool gameIsPaused;
+    public static bool gameIsOver;
+    private bool stopLoading;
 
     private void Start()
     {
         gameIsPaused = false;
+        gameIsOver = false;
+        stopLoading = false;
     }
     public void Update()
     {
@@ -28,6 +32,17 @@ public class EstadoDeJogo : MonoBehaviour
             gameIsPaused = true;
             Time.timeScale = 0f;
             SceneManager.LoadSceneAsync(7, LoadSceneMode.Additive);
+        }
+        if (gameIsOver && !stopLoading)
+        {
+            stopLoading = true;
+            playerSteps.Stop();
+            Time.timeScale = 0f;
+            SceneManager.LoadSceneAsync(7, LoadSceneMode.Additive);
+        }
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            gameIsOver = true;
         }
     }
 }
