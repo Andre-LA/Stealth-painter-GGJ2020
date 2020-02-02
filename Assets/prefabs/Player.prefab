@@ -221,6 +221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprRender: {fileID: 5499515364436568682}
   deslocamento: -3.6
+  naoAtualizar: 0
 --- !u!58 &3107895733192287780
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -234,9 +235,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.57197714}
+  m_Offset: {x: 0, y: -0.5}
   serializedVersion: 2
-  m_Radius: 0.22802293
+  m_Radius: 0.35
 --- !u!50 &6329558431206278510
 Rigidbody2D:
   serializedVersion: 4
