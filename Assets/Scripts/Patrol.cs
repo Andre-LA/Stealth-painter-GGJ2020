@@ -61,7 +61,7 @@ public class Patrol : MonoBehaviour
     {
         if (collision.CompareTag("Player") && !playerIsHiding)
         {
-            Debug.LogError("Peguei Voce!");
+            Debug.Log("Peguei Voce!");
         }
     }
 
