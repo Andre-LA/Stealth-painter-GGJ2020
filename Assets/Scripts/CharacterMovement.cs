@@ -14,15 +14,18 @@ public class CharacterMovement : MonoBehaviour
 
     public GameObject player;
     private Animator Anim;
+    private SpriteRenderer playerSpriteRenderer;
 
     void Start()
     {
         CheckInteraction.onMonalisaStart += StopPlayerMovement;
         CheckInteraction.onMonalisaExit += StartPlayerMovement;
         CheckInteraction.onMonalisaReEnter += StopPlayerMovement;
+        CheckInteraction.onPlayerHiding += Hide;
 
         player_footsteps = player.GetComponent<AudioSource>();
         Anim = GetComponent<Animator>();
+        playerSpriteRenderer = player.GetComponent<SpriteRenderer>();
 
     }
 
@@ -107,8 +110,17 @@ public class CharacterMovement : MonoBehaviour
         canPlayerMove = true;
     }
 
-    private void UpdatePlayerAnim(float X, float Y)
+    private void Hide()
     {
-        
+        if (canPlayerMove)
+        {
+            canPlayerMove = false;
+            playerSpriteRenderer.enabled = false;
+        }
+        else
+        {
+            canPlayerMove = true;
+            playerSpriteRenderer.enabled = true;
+        }
     }
 }

@@ -6,7 +6,7 @@ public class CheckInteraction : MonoBehaviour
 {
     public GameObject alert;
     public delegate void Interactive();
-    public static event Interactive onMonalisaStart, onMonalisaExit, onMonalisaReEnter;
+    public static event Interactive onMonalisaStart, onMonalisaExit, onMonalisaReEnter, onPlayerHiding;
 
     private bool monalisaLoaded = false;
     private bool nearInteractive = false;
@@ -111,9 +111,9 @@ public class CheckInteraction : MonoBehaviour
                 }
             }
 
-            if (nearInteractive)
+            if (nearInteractive && Input.GetButtonDown("Jump"))
             {
-                Debug.Log("Fazer algo!");
+                onPlayerHiding?.Invoke();
             }
             
             if (nearChave)
