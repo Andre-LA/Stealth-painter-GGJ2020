@@ -9,7 +9,6 @@ public class GerenciadorDePuzzle : MonoBehaviour
 
     void OnEnable()
     {
-        EstadoDeJogo.quadroAberto = true;
         for (int i = 0; i < quadros.Length; i++)
         {
             bool ativo = i == EstadoDeJogo.faseAtual;

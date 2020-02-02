@@ -28,6 +28,9 @@ public class CharacterMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (EstadoDeJogo.quadroAberto)
+            return;
+    
         verificaDirecao();
         verificaAnimacao();
 
