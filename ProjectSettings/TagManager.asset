@@ -9,6 +9,7 @@ TagManager:
   - Painting
   - Door
   - Chave
+  - Camera
   layers:
   - Default
   - TransparentFX
