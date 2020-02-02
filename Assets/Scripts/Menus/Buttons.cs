@@ -40,4 +40,24 @@ public class Buttons : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.UnloadSceneAsync(7);
     }
+
+    public void HowToPlay()
+    {
+        SceneManager.LoadScene("HowToPlay");
+    }
+
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
+    public void NewGame()
+    {
+
+    }
+
+    public void Back()
+    {
+        SceneManager.LoadScene("StartMenu");
+    }
 }
