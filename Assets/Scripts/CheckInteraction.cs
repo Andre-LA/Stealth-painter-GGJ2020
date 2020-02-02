@@ -22,7 +22,6 @@ public class CheckInteraction : MonoBehaviour
     {
         if (collision.CompareTag("Painting"))
         {
-            //EstadoDeJogo.quadroAbertoID = collision.gameObject.GetComponent<Quadro>().id;
             Alert();
             nearPainting = true;            
         }
@@ -94,11 +93,7 @@ public class CheckInteraction : MonoBehaviour
             {
                 if (EstadoDeJogo.podeProsseguirFase)
                 {
-                    Debug.Log("Proxima fase!");
-                }
-                else
-                {
-                    Debug.Log("Ainda não pode ir!");
+                    FindObjectOfType<Porta>().ProsseguirFase();
                 }
             }
 

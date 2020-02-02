@@ -22,7 +22,7 @@ public class CharacterMovement : MonoBehaviour
         Anim = GetComponent<Animator>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         verificaDirecao();
         verificaAnimacao();
