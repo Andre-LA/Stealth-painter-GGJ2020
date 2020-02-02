@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.SceneManagement;  
 
 public class Buttons : MonoBehaviour
 {
@@ -25,11 +25,11 @@ public class Buttons : MonoBehaviour
         if (EstadoDeJogo.loreOnScreen)
         {
             EstadoDeJogo.loreOnScreen = false;
-            SceneManager.UnloadSceneAsync(8);
+            SceneManager.UnloadSceneAsync(9);
         }
         else
         {
-            SceneManager.UnloadSceneAsync(7);
+            SceneManager.UnloadSceneAsync(8);
         }
     }
     
@@ -38,14 +38,14 @@ public class Buttons : MonoBehaviour
         EstadoDeJogo.loreOnScreen = false;
         EstadoDeJogo.gameIsPaused = false;
 
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void Restart()
     {
         SceneManager.LoadScene(EstadoDeJogo.faseAtual);
         Time.timeScale = 1f;
-        SceneManager.UnloadSceneAsync(7);
+        SceneManager.UnloadSceneAsync(8);
     }
 
     public void HowToPlay()
@@ -60,7 +60,7 @@ public class Buttons : MonoBehaviour
 
     public void NewGame()
     {
-        SceneManager.LoadScene(8);
+        SceneManager.LoadScene(9);
     }
 
     public void Back()

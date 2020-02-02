@@ -147,6 +147,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 1059176087628599350, guid: 6be20726ae6c4fd4c8d282a99e8c5867,
+        type: 3}
+      propertyPath: m_Text
+      value: '      Quit      '
+      objectReference: {fileID: 0}
     - target: {fileID: 1059176088084856907, guid: 6be20726ae6c4fd4c8d282a99e8c5867,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -286,6 +291,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059176088404264063, guid: 6be20726ae6c4fd4c8d282a99e8c5867,
+        type: 3}
+      propertyPath: m_Text
+      value: Restart Level
       objectReference: {fileID: 0}
     - target: {fileID: 1059176088777155049, guid: 6be20726ae6c4fd4c8d282a99e8c5867,
         type: 3}

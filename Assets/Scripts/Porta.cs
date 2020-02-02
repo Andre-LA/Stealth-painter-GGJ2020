@@ -11,6 +11,7 @@ public class Porta : MonoBehaviour
     void Start()
     {
         EstadoDeJogo.podeProsseguirFase = false; //naoTemQuadro;
+        EstadoDeJogo.faseAtualBI = SceneManager.GetActiveScene().buildIndex;
     }
         
     public void ProsseguirFase()

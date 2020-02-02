@@ -61,7 +61,7 @@ public class Patrol : MonoBehaviour
     {
         if (collision.CompareTag("Player") && !playerIsHiding)
         {
-            SceneManager.LoadScene(11);
+            SceneManager.LoadScene(12);
         }
     }
 

@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9f4dd18260125d49b7c7a711770d9f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 0.7
   startWaitTime: 0
   lanterna: {fileID: 8893403815902129252}
   direcao: 1

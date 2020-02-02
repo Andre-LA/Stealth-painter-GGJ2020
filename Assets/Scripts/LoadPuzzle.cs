@@ -23,8 +23,8 @@ public class LoadPuzzle : MonoBehaviour
     private void CallPuzzle()
     {
         Debug.Log("Loading Scene");
-        SceneManager.LoadScene(1, LoadSceneMode.Additive);
-        painting = SceneManager.GetSceneByBuildIndex(1);
+        SceneManager.LoadScene(2, LoadSceneMode.Additive);
+        painting = SceneManager.GetSceneByBuildIndex(2);
         EstadoDeJogo.quadroAberto = true;
     }
 

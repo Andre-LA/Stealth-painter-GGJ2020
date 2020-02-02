@@ -7,7 +7,7 @@ public class GameOverMenu : MonoBehaviour
 {
     public void Reiniciar()
     {
-        SceneManager.LoadScene(EstadoDeJogo.faseAtual);
+        SceneManager.LoadScene(EstadoDeJogo.faseAtualBI);
     }
     
     public void Sair()
