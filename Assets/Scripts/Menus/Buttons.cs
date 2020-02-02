@@ -21,8 +21,16 @@ public class Buttons : MonoBehaviour
     public void Continue()
     {
         Time.timeScale = 1f;
-        EstadoDeJogo.gameIsPaused = false; 
-        SceneManager.UnloadSceneAsync(7);
+        EstadoDeJogo.gameIsPaused = false;
+        if (EstadoDeJogo.loreOnScreen)
+        {
+            EstadoDeJogo.loreOnScreen = false;
+            SceneManager.UnloadSceneAsync(8);
+        }
+        else
+        {
+            SceneManager.UnloadSceneAsync(7);
+        }
     }
 
 
