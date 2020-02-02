@@ -423,6 +423,12 @@ MonoBehaviour:
   regiaoMin: {x: 2.85, y: -0.37}
   regiaoMax: {x: 4.1, y: 0.25}
   dentro: 0
+--- !u!1 &95789865 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 95789865, guid: 738320299ea4f5c47a534bd9b19d3250,
+    type: 3}
+  m_PrefabInstance: {fileID: 8568401786256388267}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &95883010
 GameObject:
   m_ObjectHideFlags: 0
@@ -1638,6 +1644,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1044915995 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8568401785272738528, guid: 738320299ea4f5c47a534bd9b19d3250,
+    type: 3}
+  m_PrefabInstance: {fileID: 8568401786256388267}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1215883352 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3251730277822945640, guid: d36f3905b3bbc114496f22e9a7d84ee0,
@@ -1670,6 +1682,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5499515364436568676, guid: 28eb8fc0549fc294686a92372f1ddb97,
+        type: 3}
+      propertyPath: armarioEntrar
+      value: 
+      objectReference: {fileID: 95789865}
+    - target: {fileID: 5499515364436568676, guid: 28eb8fc0549fc294686a92372f1ddb97,
+        type: 3}
+      propertyPath: armarioDentro
+      value: 
+      objectReference: {fileID: 1518319461}
+    - target: {fileID: 5499515364436568676, guid: 28eb8fc0549fc294686a92372f1ddb97,
+        type: 3}
+      propertyPath: armario
+      value: 
+      objectReference: {fileID: 1044915995}
     - target: {fileID: 5499515364436568680, guid: 28eb8fc0549fc294686a92372f1ddb97,
         type: 3}
       propertyPath: m_Name
@@ -1762,6 +1789,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5499515364436568683, guid: 28eb8fc0549fc294686a92372f1ddb97,
     type: 3}
   m_PrefabInstance: {fileID: 1343440656}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1518319461 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1518319461, guid: 738320299ea4f5c47a534bd9b19d3250,
+    type: 3}
+  m_PrefabInstance: {fileID: 8568401786256388267}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1528982747
 GameObject:

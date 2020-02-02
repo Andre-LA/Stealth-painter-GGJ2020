@@ -31,6 +31,7 @@ public class CheckInteraction : MonoBehaviour
         {
             Alert();
             nearInteractive = true;
+            EstadoDeJogo.interactive = collision.gameObject.name;
         }
         if (collision.CompareTag("Door"))
         {
