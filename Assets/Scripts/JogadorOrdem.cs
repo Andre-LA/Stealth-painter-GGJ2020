@@ -6,9 +6,16 @@ public class JogadorOrdem : MonoBehaviour
 {
     public Renderer sprRender;
     public float deslocamento;
+    public bool naoAtualizar;
+    
+    void Start()
+    {
+        sprRender.sortingOrder = Mathf.FloorToInt((-transform.position.y)*100 + deslocamento*100);    
+    }
     
     void Update()
     {
-        sprRender.sortingOrder = Mathf.FloorToInt((-transform.position.y)*100 + deslocamento*100);
+        if (!naoAtualizar)
+            sprRender.sortingOrder = Mathf.FloorToInt((-transform.position.y)*100 + deslocamento*100);
     }
 }

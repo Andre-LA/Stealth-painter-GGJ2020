@@ -7,7 +7,6 @@ public class ParedeTranslucida : MonoBehaviour
 {
     public Tilemap tilemapParede;
     public Color corTranslucida;
-    public float vel;
     
     public Vector2 regiaoMin, regiaoMax;
     public bool dentro;
@@ -31,7 +30,7 @@ public class ParedeTranslucida : MonoBehaviour
         tilemapParede.color = Color.Lerp(
             tilemapParede.color,
             dentro ? corTranslucida : Color.white,
-            Time.deltaTime * vel
+            Time.deltaTime * 5
         );
     }
 }

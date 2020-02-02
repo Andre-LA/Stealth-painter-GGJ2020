@@ -8,10 +8,11 @@ public class CheckInteraction : MonoBehaviour
     public delegate void Interactive();
     public static event Interactive onMonalisaStart, onMonalisaExit, onMonalisaReEnter;
 
-    static bool monalisaLoaded = false;
+    private bool monalisaLoaded = false;
     private bool nearInteractive = false;
     private bool nearPainting = false;
     private bool nearDoor = false;
+    private bool nearChave = false;
     
     void Update()
     {
@@ -36,6 +37,12 @@ public class CheckInteraction : MonoBehaviour
             Alert();
             nearDoor = true;
         }
+        
+        if (collision.CompareTag("Chave"))
+        {
+            Alert();
+            nearChave = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -54,6 +61,12 @@ public class CheckInteraction : MonoBehaviour
         {
             Alert();
             nearDoor = false;
+        }
+        
+        if (collision.CompareTag("Chave"))
+        {
+            Alert();
+            nearChave = false;
         }
     }
 
@@ -101,6 +114,12 @@ public class CheckInteraction : MonoBehaviour
             if (nearInteractive)
             {
                 Debug.Log("Fazer algo!");
+            }
+            
+            if (nearChave)
+            {
+                EstadoDeJogo.podeProsseguirFase = true;
+                Destroy(GameObject.FindWithTag("Chave"));
             }
         }
     }
