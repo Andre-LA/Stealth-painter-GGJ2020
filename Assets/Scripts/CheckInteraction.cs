@@ -12,6 +12,7 @@ public class CheckInteraction : MonoBehaviour
     private bool nearInteractive = false;
     private bool nearPainting = false;
     private bool nearDoor = false;
+    private bool paintingOnScreen = false;
     void Update()
     {
         ActionCheck();
@@ -22,7 +23,6 @@ public class CheckInteraction : MonoBehaviour
     {
         if (collision.CompareTag("Painting"))
         {
-            //EstadoDeJogo.quadroAbertoID = collision.gameObject.GetComponent<Quadro>().id;
             Alert();
             nearPainting = true;            
         }
@@ -75,14 +75,17 @@ public class CheckInteraction : MonoBehaviour
         {
             onMonalisaStart?.Invoke();
             monalisaLoaded = true;
+            paintingOnScreen = true;
         }
-        else if (monalisaLoaded && nearPainting && Input.GetButtonDown("Jump"))
+        else if (!paintingOnScreen && monalisaLoaded && nearPainting && Input.GetButtonDown("Jump"))
         {
             onMonalisaReEnter?.Invoke();
+            paintingOnScreen = true;
         }
-        if (monalisaLoaded && Input.GetButtonDown("Jump"))
+        else if (paintingOnScreen && monalisaLoaded && Input.GetButtonDown("Jump"))
         {
             onMonalisaExit?.Invoke();
+            paintingOnScreen = false;
         }
     }
 

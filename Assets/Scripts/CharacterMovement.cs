@@ -7,7 +7,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField]
     private float playerSpeed = 8f;
     private bool canPlayerMove = true;
-    private Animator player_animator;
+    private AudioSource player_footsteps;
     public GameObject player;
     
     void Start()
@@ -15,7 +15,7 @@ public class CharacterMovement : MonoBehaviour
         CheckInteraction.onMonalisaStart += StopPlayerMovement;
         CheckInteraction.onMonalisaExit += StartPlayerMovement;
         CheckInteraction.onMonalisaReEnter += StopPlayerMovement;
-        player_animator = player.GetComponent<Animator>();
+        player_footsteps = player.GetComponent<AudioSource>();
     }
 
     void Update()
@@ -31,10 +31,16 @@ public class CharacterMovement : MonoBehaviour
         {
             MoveCharacter(player, new Vector2(axisX, axisY));
             UpdatePlayerAnim(axisX, axisY);
+            if (!player_footsteps.isPlaying && canPlayerMove)
+            {
+                player_footsteps.Play();
+            }
+            
         }
         else
         {
             UpdatePlayerAnim(0, 0);
+            player_footsteps.Stop();
         }
     }
 
