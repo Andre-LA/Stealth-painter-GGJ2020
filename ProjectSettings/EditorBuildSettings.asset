@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/LevelScene.unity
-    guid: 8945cacae1d1f1042b125eed3158cfa6
+    path: Assets/prefabs/Fase1.unity
+    guid: ccb66a349e27bf242bf171cbbe8d1f91
   - enabled: 1
     path: Assets/Scenes/Puzzle.unity
     guid: 2532f21b6db20a246b27b9be0c5507a4
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/prefabs/Fase2_Parte1.unity
+    guid: 64ea051e4b3a95f4b854bac1a2004c69
   m_configObjects: {}

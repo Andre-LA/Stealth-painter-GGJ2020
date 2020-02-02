@@ -8,10 +8,11 @@ public class CheckInteraction : MonoBehaviour
     public delegate void Interactive();
     public static event Interactive onMonalisaStart, onMonalisaExit, onMonalisaReEnter;
 
-    private bool monalisaLoaded = false;
+    static bool monalisaLoaded = false;
     private bool nearInteractive = false;
     private bool nearPainting = false;
     private bool nearDoor = false;
+    
     void Update()
     {
         ActionCheck();
@@ -75,11 +76,11 @@ public class CheckInteraction : MonoBehaviour
             onMonalisaStart?.Invoke();
             monalisaLoaded = true;
         }
-        else if (monalisaLoaded && nearPainting && Input.GetButtonDown("Jump"))
+        else if (monalisaLoaded && nearPainting && Input.GetButtonDown("Jump") && !EstadoDeJogo.quadroAberto)
         {
             onMonalisaReEnter?.Invoke();
         }
-        if (monalisaLoaded && Input.GetButtonDown("Jump"))
+        else if (monalisaLoaded && Input.GetButtonDown("Jump"))
         {
             onMonalisaExit?.Invoke();
         }

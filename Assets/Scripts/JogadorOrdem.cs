@@ -5,10 +5,10 @@ using UnityEngine;
 public class JogadorOrdem : MonoBehaviour
 {
     public Renderer sprRender;
-    public float deslocamento, multiplicador;
+    public float deslocamento;
     
     void Update()
     {
-        sprRender.sortingOrder = Mathf.FloorToInt((-transform.position.y)*multiplicador + deslocamento*multiplicador);
+        sprRender.sortingOrder = Mathf.FloorToInt((-transform.position.y)*100 + deslocamento*100);
     }
 }
