@@ -79,7 +79,6 @@ public class Patrol : MonoBehaviour
 
     public void verificaDirecao()
     {
-
         if (axisX > 0) { direcao = 1f; }                // valor do eixo positivo está indo para direita
         else if (axisX < 0) { direcao = -1f; }          // valor do eixo negativo está indo para esquerda
         transform.localScale = new Vector3(direcao, 1f, 1f);
