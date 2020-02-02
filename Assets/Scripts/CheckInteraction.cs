@@ -97,11 +97,7 @@ public class CheckInteraction : MonoBehaviour
             {
                 if (EstadoDeJogo.podeProsseguirFase)
                 {
-                    Debug.Log("Proxima fase!");
-                }
-                else
-                {
-                    Debug.Log("Ainda não pode ir!");
+                    FindObjectOfType<Porta>().ProsseguirFase();
                 }
             }
 
