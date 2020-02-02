@@ -5,13 +5,35 @@ using UnityEngine;
 public class GerenciadorDePuzzle : MonoBehaviour
 {
     public GameObject[] quadros;
+    MatrizQuadro quadroAtual;
 
     void OnEnable()
     {
+        EstadoDeJogo.quadroAberto = true;
         for (int i = 0; i < quadros.Length; i++)
         {
-            Debug.Log(i.ToString() + " , " + EstadoDeJogo.quadroAbertoID.ToString());
-            quadros[i].SetActive(i == EstadoDeJogo.quadroAbertoID);
+            bool ativo = i == EstadoDeJogo.faseAtual;
+            
+            if (ativo)
+                quadroAtual = quadros[i].GetComponent<MatrizQuadro>();
+
+            quadros[i].SetActive(ativo);
+        }
+    }
+    
+    void OnDisable()
+    {
+        EstadoDeJogo.quadroAberto = false;
+    }
+    
+    void Update()
+    {
+        if (quadroAtual)
+        {
+            if (quadroAtual.resolvido) 
+            {
+                EstadoDeJogo.podeProsseguirFase = true;
+            }
         }
     }
 }
