@@ -100,7 +100,7 @@ public class CheckInteraction : MonoBehaviour
 
             if (nearInteractive && Input.GetButtonDown("Jump"))
             {
-                onPlayerHiding();
+                onPlayerHiding?.Invoke();
             }
         }
     }
