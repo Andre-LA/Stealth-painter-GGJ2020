@@ -51,8 +51,11 @@ TagManager:
   - name: Background
     uniqueID: 3259328321
     locked: 0
-  - name: Cenario
+  - name: Cenario_enfeite
     uniqueID: 3055865195
+    locked: 0
+  - name: Cenario_interativo
+    uniqueID: 4251499875
     locked: 0
   - name: Player_objetos
     uniqueID: 2410239507
