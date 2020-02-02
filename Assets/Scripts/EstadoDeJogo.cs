@@ -12,6 +12,7 @@ public class EstadoDeJogo : MonoBehaviour
     public static bool quadroAberto;
     public static bool podeProsseguirFase;
     public static int faseAtual;
+    public static int faseAtualBI;
     public static bool gameIsPaused;
     public static bool gameIsOver;
     public static bool loreOnScreen;
@@ -33,23 +34,6 @@ public class EstadoDeJogo : MonoBehaviour
         {
             playerSteps.Stop();
             gameIsPaused = true;
-            Time.timeScale = 0f;
-            SceneManager.LoadSceneAsync(7, LoadSceneMode.Additive);
-        }
-        if (gameIsOver && !stopLoading)
-        {
-            stopLoading = true;
-            playerSteps.Stop();
-            Time.timeScale = 0f;
-            SceneManager.LoadSceneAsync(7, LoadSceneMode.Additive);
-        }
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            gameIsOver = true;
-        }
-        if (levelIsStarting)
-        {
-            levelIsStarting = false;
             Time.timeScale = 0f;
             SceneManager.LoadSceneAsync(8, LoadSceneMode.Additive);
         }

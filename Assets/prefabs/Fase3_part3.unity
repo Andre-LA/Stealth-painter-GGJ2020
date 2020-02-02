@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -130,7 +130,7 @@ PrefabInstance:
     - target: {fileID: 1068980696604416963, guid: 5e7817c62dffdbc49baf5db8fc751fe7,
         type: 3}
       propertyPath: proxCenaIdx
-      value: 7
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7988946357461100573, guid: 5e7817c62dffdbc49baf5db8fc751fe7,
         type: 3}
@@ -170,7 +170,7 @@ PrefabInstance:
     - target: {fileID: 7988946357461100573, guid: 5e7817c62dffdbc49baf5db8fc751fe7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7988946357461100573, guid: 5e7817c62dffdbc49baf5db8fc751fe7,
         type: 3}
@@ -1693,7 +1693,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &448254611
 CircleCollider2D:
@@ -1768,7 +1768,7 @@ PrefabInstance:
     - target: {fileID: 8875611923998489651, guid: f9c27e8b45c8d1c4b9e1a66f836a291c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8875611923998489651, guid: f9c27e8b45c8d1c4b9e1a66f836a291c,
         type: 3}
@@ -1839,7 +1839,7 @@ Transform:
   - {fileID: 1678692379}
   - {fileID: 2042047288}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &914843471
 GameObject:
@@ -1877,7 +1877,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1894,7 +1894,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 2
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1917,12 +1917,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 914843471}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.3, y: 0.83, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_Father: {fileID: 2033022193}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1291136012
 PrefabInstance:
@@ -1974,7 +1974,7 @@ PrefabInstance:
     - target: {fileID: 7690699179138428837, guid: 845534e668ff0a34cbde9a5554f595cd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7690699179138428837, guid: 845534e668ff0a34cbde9a5554f595cd,
         type: 3}
@@ -2739,6 +2739,12 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!4 &2033022193 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5499515364436568683, guid: 28eb8fc0549fc294686a92372f1ddb97,
+    type: 3}
+  m_PrefabInstance: {fileID: 2057147668}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2042047287
 GameObject:
   m_ObjectHideFlags: 0
@@ -2904,7 +2910,7 @@ PrefabInstance:
     - target: {fileID: 5499515364436568683, guid: 28eb8fc0549fc294686a92372f1ddb97,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5499515364436568683, guid: 28eb8fc0549fc294686a92372f1ddb97,
         type: 3}
@@ -2968,7 +2974,7 @@ PrefabInstance:
     - target: {fileID: 2053507259864228840, guid: 1281bf1bc06593240bc06dc505583abe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2053507259864228840, guid: 1281bf1bc06593240bc06dc505583abe,
         type: 3}
@@ -3037,7 +3043,7 @@ PrefabInstance:
     - target: {fileID: 8326806015470157310, guid: 04c3439284bd8b0469420850b86f56c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8326806015470157310, guid: 04c3439284bd8b0469420850b86f56c8,
         type: 3}

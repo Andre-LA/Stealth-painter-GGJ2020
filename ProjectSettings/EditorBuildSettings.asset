@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartMenu.unity
+    guid: 2bb5559bf9ecc8f4383df2122c03e2ab
+  - enabled: 1
     path: Assets/prefabs/Fase1.unity
     guid: ccb66a349e27bf242bf171cbbe8d1f91
   - enabled: 1
@@ -42,6 +45,6 @@ EditorBuildSettings:
     path: Assets/Scenes/GameOver.unity
     guid: 7b8fc56b4cbb6de43a8bd677b74b1a0f
   - enabled: 1
-    path: Assets/Scenes/StartMenu.unity
-    guid: 2bb5559bf9ecc8f4383df2122c03e2ab
+    path: Assets/Scenes/Parabains.unity
+    guid: 0d82d5c21a182974ab81f9b0093e6f27
   m_configObjects: {}
