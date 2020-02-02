@@ -781,6 +781,7 @@ GameObject:
   - component: {fileID: 1527580782281850434}
   - component: {fileID: 1527580782281850435}
   - component: {fileID: 1810742010182683772}
+  - component: {fileID: 9101473525661532720}
   m_Layer: 5
   m_Name: pn quadro
   m_TagString: Untagged
@@ -844,6 +845,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resolvido: 0
   quadroID: 0
+--- !u!114 &9101473525661532720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527580782281850437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86710e43de46f6f4bac7c8e50813a599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AspectMode: 2
+  m_AspectRatio: 0.68
 --- !u!1 &1527580782914070549
 GameObject:
   m_ObjectHideFlags: 0
