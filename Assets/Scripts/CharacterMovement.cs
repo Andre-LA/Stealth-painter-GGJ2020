@@ -7,6 +7,8 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField]
     private float playerSpeed = 8f;
     private bool canPlayerMove = true;
+
+    private AudioSource player_footsteps;
     public float direcao = 0.5f;
     public float axisX, axisY;
 
@@ -18,10 +20,13 @@ public class CharacterMovement : MonoBehaviour
         CheckInteraction.onMonalisaStart += StopPlayerMovement;
         CheckInteraction.onMonalisaExit += StartPlayerMovement;
         CheckInteraction.onMonalisaReEnter += StopPlayerMovement;
+
+        player_footsteps = player.GetComponent<AudioSource>();
         Anim = GetComponent<Animator>();
+
     }
 
-    void Update()
+    void FixedUpdate()
     {
         verificaDirecao();
         verificaAnimacao();
@@ -31,6 +36,14 @@ public class CharacterMovement : MonoBehaviour
         if (axisX != 0 || axisY != 0)
         {
             MoveCharacter(player, new Vector2(axisX, axisY));
+            if (!player_footsteps.isPlaying && canPlayerMove)
+            {
+                player_footsteps.Play();
+            }
+        }
+        else
+        {
+          player_footsteps.Play();
         }
     }
 
@@ -63,6 +76,7 @@ public class CharacterMovement : MonoBehaviour
         {
             Anim.SetInteger("situacao", 3);
             return;
+
         }
 
         if (antes == 3)
@@ -88,5 +102,10 @@ public class CharacterMovement : MonoBehaviour
     private void StartPlayerMovement()
     {
         canPlayerMove = true;
+    }
+
+    private void UpdatePlayerAnim(float X, float Y)
+    {
+        
     }
 }
