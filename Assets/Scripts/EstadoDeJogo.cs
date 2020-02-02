@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class EstadoDeJogo : MonoBehaviour
@@ -18,6 +16,7 @@ public class EstadoDeJogo : MonoBehaviour
     public static bool gameIsOver;
     public static bool loreOnScreen;
     public static bool levelIsStarting;
+    public static string interactive;
     private bool stopLoading;
 
     private void Start()
