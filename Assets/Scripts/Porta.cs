@@ -1,18 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Porta : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public int proxCenaIdx;
+    
+    public void ProsseguirFase()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        SceneManager.LoadScene(proxCenaIdx);
+        Debug.Log("Proxima fase!");
     }
 }

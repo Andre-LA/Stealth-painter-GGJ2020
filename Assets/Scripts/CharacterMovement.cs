@@ -18,7 +18,7 @@ public class CharacterMovement : MonoBehaviour
         player_animator = player.GetComponent<Animator>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         PlayerInput();
     }
