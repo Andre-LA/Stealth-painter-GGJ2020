@@ -21,7 +21,7 @@ public class Guards : MonoBehaviour
     {
         if (collision.CompareTag("Player") && !playerIsHiding)
         {
-            Debug.LogError("Peguei Voce!");
+            //Debug.LogError("Peguei Voce!");
         }
     }
 
