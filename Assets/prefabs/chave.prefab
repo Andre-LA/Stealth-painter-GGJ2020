@@ -236,6 +236,31 @@ PrefabInstance:
       propertyPath: m_ApplyToSortingLayers.Array.data[6]
       value: -349352983
       objectReference: {fileID: 0}
+    - target: {fileID: 8893403815869391275, guid: 489df174f63123845a3a95086f77bd24,
+        type: 3}
+      propertyPath: m_FalloffIntensity
+      value: 0.727
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893403815869391275, guid: 489df174f63123845a3a95086f77bd24,
+        type: 3}
+      propertyPath: m_PointLightInnerAngle
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893403815869391275, guid: 489df174f63123845a3a95086f77bd24,
+        type: 3}
+      propertyPath: m_PointLightOuterAngle
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893403815869391275, guid: 489df174f63123845a3a95086f77bd24,
+        type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893403815869391275, guid: 489df174f63123845a3a95086f77bd24,
+        type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 1.16
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 489df174f63123845a3a95086f77bd24, type: 3}
 --- !u!4 &3433464653333470850 stripped
